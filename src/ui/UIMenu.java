@@ -14,7 +14,7 @@ public class UIMenu {
 
     public static void showMenu(){
         System.out.println("Welcome to My Appointments");
-        System.out.println("Selecciona la opción deseada");
+        System.out.println("Select the desired option");
 
         int response = 0;
         do {
@@ -79,7 +79,7 @@ public class UIMenu {
                     if (p.getEmail().equals(email)) {
                         emailCorrect = true;
                         patientLogged = p;
-                        // Show Patient Menu
+                        UIPatientMenu.showPatientMenu();
                     }
                 }
             }
