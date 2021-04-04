@@ -1,3 +1,4 @@
+package model;
 
 public class Patient extends User {
 
@@ -6,7 +7,7 @@ public class Patient extends User {
     private double height;
     private String blood;
 
-    Patient(String name, String email)  {
+    public Patient(String name, String email)  {
         super(name, email);
 
     }
@@ -50,6 +51,12 @@ public class Patient extends User {
                 "\n Weight: " + getWeight() +
                 "\n Height: " + getHeight() +
                 "\n Blood='" + blood;
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Patient");
+        System.out.println("Complete history from birth");
     }
 }
 
